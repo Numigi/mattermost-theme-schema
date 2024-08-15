@@ -11,8 +11,8 @@ const validator = new ajv();
 // Compile the schema
 const validate = validator.compile(schema);
 
-// Read all JSON files in the 'dist' directory
-fs.readdir("./dist", (err, files) => {
+// Read all JSON files in the 'themes' directory
+fs.readdir("./themes", (err, files) => {
   if (err) {
     console.error("Error reading directory:", err);
     return;
@@ -25,7 +25,7 @@ fs.readdir("./dist", (err, files) => {
     }
 
     // Read the JSON data from the file
-    const filePath = `./dist/${file}`;
+    const filePath = `./themes/${file}`;
     const jsonData = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
     // Validate the JSON data against the schema
