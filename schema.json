@@ -1,0 +1,182 @@
+{
+    "$id": "com.mattermost.theme/schema.json",
+    "title": "Mattermost themes",
+    "description": "Defines a theme associated with a Team.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "teamId": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9]{1,}$",
+                "description": "Mattermost identifier of the team."
+            },
+            "theme": {
+                "type": "object",
+                "properties": {
+                    "awayIndicator": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the away indicator appearing next to team members names in the direct messages list when they have had no browser activity for 5 minutes."
+                    },
+                    "buttonBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the rectangular background behind all high priority UI buttons."
+                    },
+                    "buttonColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color appearing on the rectangular background for all high priority UI buttons."
+                    },
+                    "centerChannelBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the center pane, right-hand sidebar and all dialog window backgrounds."
+                    },
+                    "centerChannelColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of all the text - with the exception of mentions, links, hashtags and code blocks - in the center pane, right-hand sidebar, and dialogs."
+                    },
+                    "codeTheme": {
+                        "type": "string",
+                        "description": "Background and syntax colors for all code blocks.",
+                        "enum": [
+                            "github",
+                            "monokai",
+                            "solarized-light",
+                            "solarized-dark"
+                        ]
+                    },
+                    "dndIndicator": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the do not disturb indicator appearing next to team members names in the direct messages list."
+                    },
+                    "errorTextColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of all error text."
+                    },
+                    "linkColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of all links, hashtags, teammate mentions, and low priority UI buttons."
+                    },
+                    "mentionBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Background color of the jewel indicating unread mentions that appears to the right of the channel name. This is also the background color of the “Unread Posts Below/Above” indicator appearing at the top or bottom of the Channels pane on shorter browser windows."
+                    },
+                    "mentionBj": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color on the mention jewel indicating the number of unread mentions. This is also the text color on the “Unread Posts Below/Above” indicator."
+                    },
+                    "mentionColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": ""
+                    },
+                    "mentionHighlightBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Highlight color behind your words that trigger mentions in the center pane and right-hand sidebar."
+                    },
+                    "mentionHighlightLink": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of your words that trigger mentions in the center pane and right-hand sidebar."
+                    },
+                    "newMessageSeparator": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "The new message separator appears below the last read message when you navigate to a channel with unread messages."
+                    },
+                    "onlineIndicator": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the online indicator appearing next to team members names in the direct messages list."
+                    },
+                    "sidebarBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Background color of the Channels pane, and Account and Team settings navigation sidebars."
+                    },
+                    "sidebarHeaderBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Background color of the header above the Channels pane and all dialog window headers."
+                    },
+                    "sidebarHeaderTextColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of the header above the Channels pane and all dialog window headers."
+                    },
+                    "sidebarTeamBarBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Background color of the Global Header."
+                    },
+                    "sidebarText": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of read channels in the Channels pane, and tabs in the Account and Team settings navigation sidebar."
+                    },
+                    "sidebarTextActiveBorder": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Color of the rectangular marker on the left side of the Channels pane or Settings sidebar indicating the active channel or tab."
+                    },
+                    "sidebarTextActiveColor": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of the active channel or tab in the Channels pane or Settings sidebar."
+                    },
+                    "sidebarTextHoverBg": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Background color behind channel names and settings tabs as you hover over them."
+                    },
+                    "sidebarUnreadText": {
+                        "type": "string",
+                        "pattern": "^#([0-9a-fA-F]{6})$",
+                        "description": "Text color of unread channels in the Channels pane."
+                    }
+                },
+                "required": [
+                    "awayIndicator",
+                    "buttonBg",
+                    "buttonColor",
+                    "centerChannelBg",
+                    "centerChannelColor",
+                    "codeTheme",
+                    "dndIndicator",
+                    "errorTextColor",
+                    "linkColor",
+                    "mentionBg",
+                    "mentionBj",
+                    "mentionColor",
+                    "mentionHighlightBg",
+                    "mentionHighlightLink",
+                    "newMessageSeparator",
+                    "onlineIndicator",
+                    "sidebarBg",
+                    "sidebarHeaderBg",
+                    "sidebarHeaderTextColor",
+                    "sidebarTeamBarBg",
+                    "sidebarText",
+                    "sidebarTextActiveBorder",
+                    "sidebarTextActiveColor",
+                    "sidebarTextHoverBg",
+                    "sidebarUnreadText"
+                ]
+            }
+        },
+        "required": [
+            "teamId",
+            "theme"
+        ]
+    }
+}

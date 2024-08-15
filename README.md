@@ -1,2 +1,5 @@
-# mattermost-theme-schema
-// Mattermost theme definition and schema for API interaction.
+# Mattermost Theme Schema
+
+Theme data and schema definition for Mattermost.
+
+The `themes.json` file is used for API interaction and theme setting.
