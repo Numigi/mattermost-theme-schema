@@ -1,0 +1,30 @@
+{
+    "teamId": "xy5pt8qe77f1f8g43cfuxb7qpw",
+    "theme": {
+        "awayIndicator": "#f5be5c",
+        "buttonBg": "#1f2128",
+        "buttonColor": "#f5be5c",
+        "centerChannelBg": "#eeeff2",
+        "centerChannelColor": "#1f2128",
+        "codeTheme": "github",
+        "dndIndicator": "#c52626",
+        "errorTextColor": "#c52626",
+        "linkColor": "#c4810a",
+        "mentionBg": "#f5be5c",
+        "mentionBj": "#f5be5c",
+        "mentionColor": "#1f2128",
+        "mentionHighlightBg": "#f5be5c",
+        "mentionHighlightLink": "#1f2128",
+        "newMessageSeparator": "#62687e",
+        "onlineIndicator": "#33c541",
+        "sidebarBg": "#1f2128",
+        "sidebarHeaderBg": "#1f2128",
+        "sidebarHeaderTextColor": "#eeeff2",
+        "sidebarTeamBarBg": "#1f2128",
+        "sidebarText": "#eeeff2",
+        "sidebarTextActiveBorder": "#f5be5c",
+        "sidebarTextActiveColor": "#eeeff2",
+        "sidebarTextHoverBg": "#39414c",
+        "sidebarUnreadText": "#eeeff2"
+    }
+}
